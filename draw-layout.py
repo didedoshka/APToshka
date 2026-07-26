@@ -44,11 +44,13 @@ keys.extend([
     (8.40, 4.72, -28), (9.53, 4.42, -12), (10.60, 4.30, 0),   # right: ●B ⌫ ↩
 ])
 
-# case outline of the left half; the right one is mirrored
+# case outline of the left half (staircase top following the columns, inner
+# controller strip going down to the thumb wedge, chamfered pinky corner —
+# traced from a photo of the actual case); the right one is mirrored
 CASE_L = [
     (0.80, 1.10), (2.00, 1.10), (2.00, 0.95), (3.00, 0.95), (3.00, 0.80),
-    (4.00, 0.80), (4.00, 0.95), (5.00, 0.95), (5.00, 1.10), (6.20, 1.10),
-    (6.20, 4.45), (7.00, 4.90), (7.45, 5.60), (6.65, 6.15), (3.45, 5.55), (0.80, 4.50),
+    (4.00, 0.80), (4.00, 0.95), (5.00, 0.95), (5.00, 1.10),
+    (7.40, 1.10), (7.40, 5.60), (6.70, 6.25), (3.45, 5.50), (0.80, 4.50),
 ]
 CASE_R = [(MIRROR - x, y) for x, y in CASE_L]
 
