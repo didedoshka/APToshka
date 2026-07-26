@@ -66,7 +66,9 @@ PAD = 10.0
 A28 = math.radians(T3[2])
 DIR = (math.cos(A28), math.sin(A28))        # along the inner thumb's bottom edge
 NRM = (-math.sin(A28), math.cos(A28))       # outward normal of that edge
-XV = 7.40 * S                               # inner vertical edge
+XV = (6 + 21 / 19.05) * S                   # inner vertical edge: the strip right of
+                                            # the main block is one XIAO wide (21 mm,
+                                            # with the XDA 19.05 mm key pitch as 1u)
 C = (key_corner(T1, -1, 1)[0] - 3, key_corner(T1, -1, 1)[1] + PAD)
 D = (key_corner(T3, -1, 1)[0] + PAD * NRM[0],   # by the middle thumb's right corner;
      key_corner(T3, -1, 1)[1] + PAD * NRM[1])   # anchored so that D-F is at exactly 28°
