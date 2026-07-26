@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 819.7 334.5" font-family="Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 819.7 336.4" font-family="Helvetica, Arial, sans-serif">
 <style>.case{fill:#e7e7e5;stroke:#c4c4c2;stroke-width:5;stroke-linejoin:round;}.key{fill:#fdfdfd;stroke:#444;stroke-width:1.2;}.red-key{fill:#fdeceb;stroke:#c0392b;stroke-width:1.2;}.blue-key{fill:#eaf2fb;stroke:#2471a3;stroke-width:1.2;}.en{font-size:19px;fill:#111;}.ru{font-size:12px;fill:#666;}.red{font-size:12px;fill:#c0392b;}.blue{font-size:12px;fill:#2471a3;}.rublue{font-size:12px;fill:#1a5276;font-weight:bold;}</style>
 <g transform="translate(-30.4, -30.4)">
-<polygon class="case" points="46.4,63.8 116.0,63.8 116.0,55.1 174.0,55.1 174.0,46.4 232.0,46.4 232.0,55.1 290.0,55.1 290.0,63.8 429.2,63.8 429.2,252.8 378.1,348.9 325.1,320.8 208.7,313.4 168.2,261.0 46.4,261.0"/>
-<polygon class="case" points="834.1,63.8 764.5,63.8 764.5,55.1 706.5,55.1 706.5,46.4 648.5,46.4 648.5,55.1 590.5,55.1 590.5,63.8 451.3,63.8 451.3,252.8 502.4,348.9 555.4,320.8 671.8,313.4 712.3,261.0 834.1,261.0"/>
+<polygon class="case" points="46.4,63.8 116.0,63.8 116.0,55.1 174.0,55.1 174.0,46.4 232.0,46.4 232.0,55.1 290.0,55.1 290.0,63.8 429.2,63.8 429.2,261.3 381.6,350.8 325.1,320.8 208.7,313.4 168.2,261.0 46.4,261.0"/>
+<polygon class="case" points="834.1,63.8 764.5,63.8 764.5,55.1 706.5,55.1 706.5,46.4 648.5,46.4 648.5,55.1 590.5,55.1 590.5,63.8 451.3,63.8 451.3,261.3 498.9,350.8 555.4,320.8 671.8,313.4 712.3,261.0 834.1,261.0"/>
 <rect class="key" x="58.0" y="75.4" width="54" height="54" rx="7"/>
 <text class="en" x="85.0" y="109.4" text-anchor="middle">W</text>
 <text class="blue" x="107.0" y="90.4" text-anchor="end">!</text>

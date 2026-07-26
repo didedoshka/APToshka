@@ -70,8 +70,8 @@ XV = 7.40 * S                               # inner vertical edge
 C = (key_corner(T1, -1, 1)[0] - 3, key_corner(T1, -1, 1)[1] + PAD)
 D = (key_corner(T3, -1, 1)[0] + PAD * NRM[0],   # by the middle thumb's right corner;
      key_corner(T3, -1, 1)[1] + PAD * NRM[1])   # anchored so that D-F is at exactly 28°
-F = (key_corner(T3, 1, 1)[0] + PAD * NRM[0] + 6 * DIR[0],
-     key_corner(T3, 1, 1)[1] + PAD * NRM[1] + 6 * DIR[1])
+F = (key_corner(T3, 1, 1)[0] + PAD * (NRM[0] + DIR[0]),   # the merge diagonal passes at
+     key_corner(T3, 1, 1)[1] + PAD * (NRM[1] + DIR[1]))   # PAD from the key, like the bottom
 t = (XV - F[0]) / math.sin(A28)             # 90-degree turn, then up to the vertical
 G = (XV, F[1] - t * math.cos(A28))
 CASE_L = [
