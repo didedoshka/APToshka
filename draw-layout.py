@@ -44,30 +44,48 @@ keys.extend([
     (8.40, 4.72, -28), (9.53, 4.42, -12), (10.60, 4.30, 0),   # right: ●B ⌫ ↩
 ])
 
-# case outline of the left half (staircase top following the columns, inner
-# controller strip going down to the thumb wedge, chamfered pinky corner —
-# traced from a photo of the actual case); the right one is mirrored
-CASE_L = [
-    (0.80, 1.10), (2.00, 1.10), (2.00, 0.95), (3.00, 0.95), (3.00, 0.80),
-    (4.00, 0.80), (4.00, 0.95), (5.00, 0.95), (5.00, 1.10),
-    (7.40, 1.10), (7.40, 5.60), (6.70, 6.25), (3.45, 5.50), (0.80, 4.50),
-]
-CASE_R = [(MIRROR - x, y) for x, y in CASE_L]
-
 U, S, M = 54.0, 58.0, 16.0
 
-def corners(x, y, rot):
+def key_corner(key, dx, dy):
+    """Corner of a (possibly rotated) key in px; dx, dy in {-1, 1}."""
+    x, y, rot = key
     cx, cy = x * S + U / 2, y * S + U / 2
     a = math.radians(rot)
-    pts = []
-    for dx, dy in ((-U / 2, -U / 2), (U / 2, -U / 2), (U / 2, U / 2), (-U / 2, U / 2)):
-        pts.append((cx + dx * math.cos(a) - dy * math.sin(a),
-                    cy + dx * math.sin(a) + dy * math.cos(a)))
-    return pts
+    ex, ey = dx * U / 2, dy * U / 2
+    return (cx + ex * math.cos(a) - ey * math.sin(a),
+            cy + ex * math.sin(a) + ey * math.cos(a))
 
-allpts = [(x * S, y * S) for x, y in CASE_L + CASE_R]
-for x, y, rot in keys:
-    allpts += corners(x, y, rot)
+# case outline of the left half, computed from the actual key corners:
+# staircase top following the columns, inner controller strip, then the bottom —
+# straight under the two pinky columns, diagonal to the outer thumb's left
+# corner, a shallower diagonal to the middle thumb's right corner, an edge
+# parallel to the inner (rotated) thumb, a 90-degree corner, and a line merging
+# into the vertical inner edge; the right half is mirrored
+T1, T2, T3 = keys[30], keys[31], keys[32]
+PAD = 10.0
+A28 = math.radians(T3[2])
+DIR = (math.cos(A28), math.sin(A28))        # along the inner thumb's bottom edge
+NRM = (-math.sin(A28), math.cos(A28))       # outward normal of that edge
+XV = 7.40 * S                               # inner vertical edge
+C = (key_corner(T1, -1, 1)[0] - 3, key_corner(T1, -1, 1)[1] + PAD)
+D = (key_corner(T3, -1, 1)[0] + PAD * NRM[0],   # by the middle thumb's right corner;
+     key_corner(T3, -1, 1)[1] + PAD * NRM[1])   # anchored so that D-F is at exactly 28°
+F = (key_corner(T3, 1, 1)[0] + PAD * NRM[0] + 6 * DIR[0],
+     key_corner(T3, 1, 1)[1] + PAD * NRM[1] + 6 * DIR[1])
+t = (XV - F[0]) / math.sin(A28)             # 90-degree turn, then up to the vertical
+G = (XV, F[1] - t * math.cos(A28))
+CASE_L = [
+    (0.80 * S, 1.10 * S), (2.00 * S, 1.10 * S), (2.00 * S, 0.95 * S),
+    (3.00 * S, 0.95 * S), (3.00 * S, 0.80 * S), (4.00 * S, 0.80 * S),
+    (4.00 * S, 0.95 * S), (5.00 * S, 0.95 * S), (5.00 * S, 1.10 * S),
+    (XV, 1.10 * S), G, F, D, C, (2.90 * S, 4.50 * S), (0.80 * S, 4.50 * S),
+]
+AXIS = (MIRROR - 1) * S + U  # keys at x and MIRROR-1-x mirror onto each other
+CASE_R = [(AXIS - x, y) for x, y in CASE_L]
+
+allpts = list(CASE_L + CASE_R)
+for key in keys:
+    allpts += [key_corner(key, dx, dy) for dx in (-1, 1) for dy in (-1, 1)]
 minx, miny = min(p[0] for p in allpts), min(p[1] for p in allpts)
 maxx, maxy = max(p[0] for p in allpts), max(p[1] for p in allpts)
 W, H = maxx - minx + 2 * M, maxy - miny + 2 * M
@@ -88,7 +106,7 @@ out.append('<style>'
 out.append('<g transform="translate(%.1f, %.1f)">' % (M - minx, M - miny))
 for case in (CASE_L, CASE_R):
     out.append('<polygon class="case" points="%s"/>'
-               % ' '.join('%.1f,%.1f' % (x * S, y * S) for x, y in case))
+               % ' '.join('%.1f,%.1f' % (x, y) for x, y in case))
 for (x, y, rot), (en, ru, red, blue, rublue) in zip(keys, K):
     px, py = x * S, y * S
     cls, label = 'key', en
