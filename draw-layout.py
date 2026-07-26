@@ -103,9 +103,9 @@ out.append('<style>'
            '.blue-key{fill:#7fd6d8;stroke:#3fa9ad;stroke-width:1.2;}'
            '.en{font-size:19px;fill:#111;}'
            '.ru{font-size:12px;fill:#666;}'
-           '.red{font-size:12px;fill:#c0392b;}'
-           '.blue{font-size:12px;fill:#2471a3;}'
-           '.rublue{font-size:12px;fill:#1a5276;font-weight:bold;}'
+           '.red{font-size:12px;fill:#e8354f;}'
+           '.blue{font-size:12px;fill:#2bb3b8;}'
+           '.rublue{font-size:12px;fill:#189196;font-weight:bold;}'
            '</style>')
 out.append('<g transform="translate(%.1f, %.1f)">' % (M - minx, M - miny))
 for case in (CASE_L, CASE_R):
