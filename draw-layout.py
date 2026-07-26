@@ -76,11 +76,13 @@ F = (key_corner(T3, 1, 1)[0] + PAD * (NRM[0] + DIR[0]),   # the merge diagonal p
      key_corner(T3, 1, 1)[1] + PAD * (NRM[1] + DIR[1]))   # PAD from the key, like the bottom
 t = (XV - F[0]) / math.sin(A28)             # 90-degree turn, then up to the vertical
 G = (XV, F[1] - t * math.cos(A28))
+YB = 3.30 * S + U + 0.20 * S                # bottom edge under the pinky column:
+                                            # same 0.2u gap as the top and left edges
 CASE_L = [
     (0.80 * S, 1.10 * S), (2.00 * S, 1.10 * S), (2.00 * S, 0.95 * S),
     (3.00 * S, 0.95 * S), (3.00 * S, 0.80 * S), (4.00 * S, 0.80 * S),
     (4.00 * S, 0.95 * S), (5.00 * S, 0.95 * S), (5.00 * S, 1.10 * S),
-    (XV, 1.10 * S), G, F, D, C, (2.90 * S, 4.50 * S), (0.80 * S, 4.50 * S),
+    (XV, 1.10 * S), G, F, D, C, (2.90 * S, YB), (0.80 * S, YB),
 ]
 AXIS = (MIRROR - 1) * S + U  # keys at x and MIRROR-1-x mirror onto each other
 CASE_R = [(AXIS - x, y) for x, y in CASE_L]
