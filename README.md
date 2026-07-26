@@ -1,34 +1,28 @@
-# zmk-proXiao
+# APToshka
 
-## Fifi
-  
-ZMK config fo proXiao shields. 
+My 36-key keymap. The alpha arrangement comes from [APTv3](https://github.com/Apsu/APT); the rest — layers, sticky modifiers, thumb keys — is my own.
 
+![APToshka](aptoshka.svg)
 
-proXiao is a bluetooth controller for:
+The big letter is what the key sends; red legends are the red layer, blue ones the blue layer, and the red/blue caps are the keys that reach those layers (the green dot on `R` reaches the green layer). Grey letters in the bottom-left corner show what the key produces in Russian through [Yasherty](https://github.com/didedoshka/yasherty); bold dark-blue ones are the Russian letters reached through the blue layer.
 
-* [Corne](https://github.com/aroum/proXiao/tree/corne)
-* [Jorne](https://github.com/aroum/proXiao/tree/jorne)
-* [Enki42](https://github.com/aroum/proXiao/tree/enki42)
-* [Fifi](https://github.com/aroum/proXiao/tree/fifi)
-* [Lily58](https://github.com/aroum/proXiao/tree/lily58)
-* [Sofle](https://github.com/aroum/proXiao/tree/sofle)
-* [reviung41](https://github.com/aroum/proXiao/tree/reviung41)
+## Layers
 
-Support for Lily58, Sofle, reviung41 is implemented only on PCB v3. Screens and backlight are not supported. FTo support encoders, you need PCB v3 and solder an additional wire.
+The full keymap lives in [`proXiao.keymap`](config/boards/shields/proXiao/proXiao.keymap) with a picture of every layer in the comments:
 
----
+- **white** — base: APTv3 alphas, sticky Cmd/Shift/Ctrl, space/backspace/enter on thumbs
+- **blue** — punctuation, brackets and arrows
+- **red** — digits (numpad-style) and the remaining symbols
+- **green** — F-keys and bluetooth profile selection
+- **yellow** — plain QWERTY with modifiers on the left, for games
 
-By switching between branches in this repository, you can choose the configuration for your keyboard. For a Corne or other compatible 6-column keyboard, you should select the ```corne``` branch.
+For Russian I switch to [Yasherty](https://github.com/didedoshka/yasherty) at the OS level, so the keymap does not need to know about it.
 
-If you have problems, flash the firmware to clear the settings from the branch [setting-reset](https://github.com/aroum/proXiao/tree/setting-reset).
+## Firmware
 
-You can change the device name in file ```config/proXiao.conf```  in line
-```
-CONFIG_ZMK_KEYBOARD_NAME="proXiao"
-```
+This repository is also a working ZMK config for [proXiao](https://github.com/aroum/proXiao) bluetooth controllers. Every push triggers a GitHub Actions build (see [`build.yaml`](build.yaml)); download the firmware from the run's artifacts and copy the `.uf2` onto each half in bootloader mode. The `settings_reset` firmware from the same artifacts clears stored state (bluetooth pairing etc.).
 
----
+> [!WARNING]
+> The firmware here targets proXiao controllers (Seeed XIAO BLE) only — do not flash it onto other hardware. If your keyboard runs QMK or something else, recreate the keymap from the pictures in `proXiao.keymap` instead.
 
-Pre-build firmware can be downloaded in the [releases](https://github.com/aroum/proXiao/releases).
-
+To make your own config: this repository started as a fork of [aroum/proXiao](https://github.com/aroum/proXiao), which supports several shields (Corne, Jorne, Fifi, …) on its branches. Fork it, pick the branch for your keyboard, and edit `config/boards/shields/proXiao/proXiao.keymap`.

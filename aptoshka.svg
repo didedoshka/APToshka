@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846.5 372.06" font-family="Helvetica, Arial, sans-serif">
+<style>.key{fill:#fdfdfd;stroke:#444;stroke-width:1.2;}.red-key{fill:#fdeceb;stroke:#c0392b;stroke-width:1.2;}.blue-key{fill:#eaf2fb;stroke:#2471a3;stroke-width:1.2;}.en{font-size:19px;fill:#111;}.ru{font-size:12px;fill:#666;}.red{font-size:12px;fill:#c0392b;}.blue{font-size:12px;fill:#2471a3;}.rublue{font-size:12px;fill:#1a5276;font-weight:bold;}</style>
+<rect class="key" x="70" y="87.4" width="54" height="54" rx="7"/>
+<text class="en" x="97" y="121.4" text-anchor="middle">W</text>
+<text class="blue" x="119" y="102.4" text-anchor="end">!</text>
+<text class="ru" x="75" y="135.4">Ш</text>
+<rect class="key" x="128" y="78.7" width="54" height="54" rx="7"/>
+<text class="en" x="155" y="112.7" text-anchor="middle">G</text>
+<text class="red" x="133" y="93.7">#</text>
+<text class="blue" x="177" y="93.7" text-anchor="end">:</text>
+<text class="ru" x="133" y="126.7">Г</text>
+<rect class="key" x="186" y="70" width="54" height="54" rx="7"/>
+<text class="en" x="213" y="104" text-anchor="middle">D</text>
+<text class="red" x="191" y="85">@</text>
+<text class="blue" x="235" y="85" text-anchor="end">"</text>
+<text class="ru" x="191" y="118">Д</text>
+<rect class="key" x="244" y="78.7" width="54" height="54" rx="7"/>
+<text class="en" x="271" y="112.7" text-anchor="middle">F</text>
+<text class="red" x="249" y="93.7">+</text>
+<text class="blue" x="293" y="93.7" text-anchor="end">-</text>
+<text class="ru" x="249" y="126.7">Ф</text>
+<rect class="key" x="302" y="87.4" width="54" height="54" rx="7"/>
+<text class="en" x="329" y="121.4" text-anchor="middle">B</text>
+<text class="ru" x="307" y="135.4">Б</text>
+<rect class="key" x="548.5" y="87.4" width="54" height="54" rx="7"/>
+<text class="en" x="575.5" y="121.4" text-anchor="middle">Q</text>
+<text class="blue" x="597.5" y="102.4" text-anchor="end">`</text>
+<text class="ru" x="553.5" y="135.4">Я</text>
+<text class="rublue" x="597.5" y="135.4" text-anchor="end">Щ</text>
+<rect class="key" x="606.5" y="78.7" width="54" height="54" rx="7"/>
+<text class="en" x="633.5" y="112.7" text-anchor="middle">L</text>
+<text class="red" x="611.5" y="93.7">1</text>
+<text class="blue" x="655.5" y="93.7" text-anchor="end">→</text>
+<text class="ru" x="611.5" y="126.7">Л</text>
+<rect class="key" x="664.5" y="70" width="54" height="54" rx="7"/>
+<text class="en" x="691.5" y="104" text-anchor="middle">U</text>
+<text class="red" x="669.5" y="85">2</text>
+<text class="blue" x="713.5" y="85" text-anchor="end">\</text>
+<text class="ru" x="669.5" y="118">У</text>
+<text class="rublue" x="713.5" y="118" text-anchor="end">Ю</text>
+<rect class="key" x="722.5" y="78.7" width="54" height="54" rx="7"/>
+<text class="en" x="749.5" y="112.7" text-anchor="middle">O</text>
+<text class="red" x="727.5" y="93.7">3</text>
+<text class="blue" x="771.5" y="93.7" text-anchor="end">/</text>
+<text class="ru" x="727.5" y="126.7">О</text>
+<rect class="key" x="780.5" y="87.4" width="54" height="54" rx="7"/>
+<text class="en" x="807.5" y="121.4" text-anchor="middle">Y</text>
+<text class="blue" x="829.5" y="102.4" text-anchor="end">|</text>
+<text class="ru" x="785.5" y="135.4">Ы</text>
+<rect class="key" x="70" y="145.4" width="54" height="54" rx="7"/>
+<text class="en" x="97" y="179.4" text-anchor="middle">R</text>
+<text x="75" y="160.4" font-size="11" fill="#1e8449">●</text>
+<text class="blue" x="119" y="160.4" text-anchor="end">?</text>
+<text class="ru" x="75" y="193.4">Р</text>
+<rect class="key" x="128" y="136.7" width="54" height="54" rx="7"/>
+<text class="en" x="155" y="170.7" text-anchor="middle">S</text>
+<text class="red" x="133" y="151.7">^</text>
+<text class="blue" x="177" y="151.7" text-anchor="end">.</text>
+<text class="ru" x="133" y="184.7">С</text>
+<rect class="key" x="186" y="128" width="54" height="54" rx="7"/>
+<text class="en" x="213" y="162" text-anchor="middle">T</text>
+<text class="red" x="191" y="143">%</text>
+<text class="blue" x="235" y="143" text-anchor="end">,</text>
+<text class="ru" x="191" y="176">Т</text>
+<rect class="key" x="244" y="136.7" width="54" height="54" rx="7"/>
+<text class="en" x="271" y="170.7" text-anchor="middle">H</text>
+<text class="red" x="249" y="151.7">$</text>
+<text class="blue" x="293" y="151.7" text-anchor="end">←</text>
+<text class="ru" x="249" y="184.7">Х</text>
+<rect class="key" x="302" y="145.4" width="54" height="54" rx="7"/>
+<text class="en" x="329" y="179.4" text-anchor="middle">K</text>
+<text class="red" x="307" y="160.4">=</text>
+<text class="blue" x="351" y="160.4" text-anchor="end">↑</text>
+<text class="ru" x="307" y="193.4">К</text>
+<rect class="key" x="548.5" y="145.4" width="54" height="54" rx="7"/>
+<text class="en" x="575.5" y="179.4" text-anchor="middle">J</text>
+<text class="red" x="553.5" y="160.4">0</text>
+<text class="blue" x="597.5" y="160.4" text-anchor="end">↓</text>
+<text class="ru" x="553.5" y="193.4">Й</text>
+<rect class="key" x="606.5" y="136.7" width="54" height="54" rx="7"/>
+<text class="en" x="633.5" y="170.7" text-anchor="middle">N</text>
+<text class="red" x="611.5" y="151.7">4</text>
+<text class="blue" x="655.5" y="151.7" text-anchor="end">[</text>
+<text class="ru" x="611.5" y="184.7">Н</text>
+<text class="rublue" x="655.5" y="184.7" text-anchor="end">Ж</text>
+<rect class="key" x="664.5" y="128" width="54" height="54" rx="7"/>
+<text class="en" x="691.5" y="162" text-anchor="middle">E</text>
+<text class="red" x="669.5" y="143">5</text>
+<text class="blue" x="713.5" y="143" text-anchor="end">&lt;</text>
+<text class="ru" x="669.5" y="176">Е</text>
+<text class="rublue" x="713.5" y="176" text-anchor="end">Ь</text>
+<rect class="key" x="722.5" y="136.7" width="54" height="54" rx="7"/>
+<text class="en" x="749.5" y="170.7" text-anchor="middle">A</text>
+<text class="red" x="727.5" y="151.7">6</text>
+<text class="blue" x="771.5" y="151.7" text-anchor="end">(</text>
+<text class="ru" x="727.5" y="184.7">А</text>
+<rect class="key" x="780.5" y="145.4" width="54" height="54" rx="7"/>
+<text class="en" x="807.5" y="179.4" text-anchor="middle">I</text>
+<text class="blue" x="829.5" y="160.4" text-anchor="end">{</text>
+<text class="ru" x="785.5" y="193.4">И</text>
+<rect class="key" x="70" y="203.4" width="54" height="54" rx="7"/>
+<text class="en" x="97" y="237.4" text-anchor="middle">X</text>
+<text class="ru" x="75" y="251.4">Ч</text>
+<rect class="key" x="128" y="194.7" width="54" height="54" rx="7"/>
+<text class="en" x="155" y="228.7" text-anchor="middle">C</text>
+<text class="blue" x="177" y="209.7" text-anchor="end">;</text>
+<text class="ru" x="133" y="242.7">Ц</text>
+<rect class="key" x="186" y="186" width="54" height="54" rx="7"/>
+<text class="en" x="213" y="220" text-anchor="middle">M</text>
+<text class="red" x="191" y="201">*</text>
+<text class="blue" x="235" y="201" text-anchor="end">'</text>
+<text class="ru" x="191" y="234">М</text>
+<rect class="key" x="244" y="194.7" width="54" height="54" rx="7"/>
+<text class="en" x="271" y="228.7" text-anchor="middle">P</text>
+<text class="red" x="249" y="209.7">&amp;</text>
+<text class="blue" x="293" y="209.7" text-anchor="end">_</text>
+<text class="ru" x="249" y="242.7">П</text>
+<rect class="key" x="302" y="203.4" width="54" height="54" rx="7"/>
+<text class="en" x="329" y="237.4" text-anchor="middle">V</text>
+<text class="ru" x="307" y="251.4">В</text>
+<rect class="key" x="548.5" y="203.4" width="54" height="54" rx="7"/>
+<text class="en" x="575.5" y="237.4" text-anchor="middle">Z</text>
+<text class="blue" x="597.5" y="218.4" text-anchor="end">~</text>
+<text class="ru" x="553.5" y="251.4">З</text>
+<rect class="key" x="606.5" y="194.7" width="54" height="54" rx="7"/>
+<text class="en" x="633.5" y="228.7" text-anchor="middle">⌘</text>
+<text class="red" x="611.5" y="209.7">7</text>
+<text class="blue" x="655.5" y="209.7" text-anchor="end">]</text>
+<text class="rublue" x="655.5" y="242.7" text-anchor="end">Э</text>
+<rect class="key" x="664.5" y="186" width="54" height="54" rx="7"/>
+<text class="en" x="691.5" y="220" text-anchor="middle">⇧</text>
+<text class="red" x="669.5" y="201">8</text>
+<text class="blue" x="713.5" y="201" text-anchor="end">&gt;</text>
+<text class="rublue" x="713.5" y="234" text-anchor="end">Ъ</text>
+<rect class="key" x="722.5" y="194.7" width="54" height="54" rx="7"/>
+<text class="en" x="749.5" y="228.7" text-anchor="middle">⎋</text>
+<text class="red" x="727.5" y="209.7">9</text>
+<text class="blue" x="771.5" y="209.7" text-anchor="end">)</text>
+<rect class="key" x="780.5" y="203.4" width="54" height="54" rx="7"/>
+<text class="en" x="807.5" y="237.4" text-anchor="middle">Tab</text>
+<text class="blue" x="829.5" y="218.4" text-anchor="end">}</text>
+<g transform="rotate(6, 271, 288.4)">
+<rect class="key" x="244" y="261.4" width="54" height="54" rx="7"/>
+<text class="en" x="271" y="295.4" text-anchor="middle">⌃</text>
+<text class="blue" x="293" y="276.4" text-anchor="end">⌥⇧</text>
+</g>
+<g transform="rotate(15, 331.9, 295.36)">
+<rect class="key" x="304.9" y="268.36" width="54" height="54" rx="7"/>
+<text class="en" x="331.9" y="302.36" text-anchor="middle">␣</text>
+</g>
+<g transform="rotate(28, 395.7, 312.76)">
+<rect class="red-key" x="368.7" y="285.76" width="54" height="54" rx="7"/>
+<text class="blue" x="417.7" y="300.76" text-anchor="end">⌥</text>
+</g>
+<g transform="rotate(-28, 508.8, 312.76)">
+<rect class="blue-key" x="481.8" y="285.76" width="54" height="54" rx="7"/>
+</g>
+<g transform="rotate(-15, 572.6, 295.36)">
+<rect class="key" x="545.6" y="268.36" width="54" height="54" rx="7"/>
+<text class="en" x="572.6" y="302.36" text-anchor="middle">⌫</text>
+</g>
+<g transform="rotate(-6, 633.5, 288.4)">
+<rect class="key" x="606.5" y="261.4" width="54" height="54" rx="7"/>
+<text class="en" x="633.5" y="295.4" text-anchor="middle">↩</text>
+</g>
+</svg>
