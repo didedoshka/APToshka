@@ -140,18 +140,17 @@
 <text class="red" x="715.5" y="197.7">9</text>
 <text class="blue" x="759.5" y="197.7" text-anchor="end">)</text>
 <rect class="key" x="768.5" y="191.4" width="54" height="54" rx="7"/>
-<text class="en" x="795.5" y="225.4" text-anchor="middle">Tab</text>
+<text class="en" x="795.5" y="225.4" text-anchor="middle">⌥</text>
 <text class="blue" x="817.5" y="206.4" text-anchor="end">}</text>
 <rect class="key" x="211.7" y="249.4" width="54" height="54" rx="7"/>
 <text class="en" x="238.7" y="283.4" text-anchor="middle">⌃</text>
-<text class="blue" x="260.7" y="264.4" text-anchor="end">⌥⇧</text>
 <g transform="rotate(12, 300.8, 283.4)">
 <rect class="key" x="273.8" y="256.4" width="54" height="54" rx="7"/>
 <text class="en" x="300.8" y="290.4" text-anchor="middle">␣</text>
 </g>
 <g transform="rotate(28, 366.3, 300.8)">
 <rect class="red-key" x="339.3" y="273.8" width="54" height="54" rx="7"/>
-<text class="blue" x="388.3" y="288.8" text-anchor="end">⌥</text>
+<text class="blue" x="388.3" y="288.8" text-anchor="end">Tab</text>
 </g>
 <g transform="rotate(-28, 514.2, 300.8)">
 <rect class="blue-key" x="487.2" y="273.8" width="54" height="54" rx="7"/>

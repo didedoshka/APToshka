@@ -24,9 +24,9 @@ K = [
     ('X', 'Ч', None, None, None), ('C', 'Ц', None, ';', None), ('M', 'М', '*', "'", None),
     ('P', 'П', '&', '_', None), ('V', 'В', None, None, None),
     ('Z', 'З', None, '~', None), ('⌘', None, '7', ']', 'Э'), ('⇧', None, '8', '>', 'Ъ'),
-    ('⎋', None, '9', ')', None), ('Tab', None, None, '}', None),
+    ('⎋', None, '9', ')', None), ('⌥', None, None, '}', None),
     # thumbs
-    ('⌃', None, None, '⌥⇧', None), ('␣', None, None, None, None), ('●R', None, None, '⌥', None),
+    ('⌃', None, None, None, None), ('␣', None, None, None, None), ('●R', None, None, 'Tab', None),
     ('●B', None, None, None, None), ('⌫', None, None, None, None), ('↩', None, None, None, None),
 ]
 
